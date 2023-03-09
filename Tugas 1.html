@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function luas_balok(p, l, t){
+        let L = 2 * ( (p*1) + (p*t) + (l*t))
+        return L;
+    }
+
+    let p = 12
+    let l = 6
+    let t = 4
+    let luasnya = luas_balok(p, l, t)
+
+    document.write('balok dengan panjang '+ p +', lebar '+ l +', dan tinggi '+ t)
+    document.write('mempunyai luas permukaan: '+luasnya)
+
+    let alas = 5;
+    let tinggi = 10;
+    let luas_segitiga = 0.5 * alas * tinggi;
+    document.write(`luas segitiga yang mempunyai alas: ${alas} dan tinggi ${tinggi} adalah ${luas_segitiga}`);
+
+    let als = 6;
+    let tngg = 12;
+    let luas_jajargenjang = als * tngg;
+    document.write(`luas jajar genjang yang mempunyai alas: ${als} dan tinggi ${tngg} adalah ${luas_jajargenjang}`);
+</script>
+</html>
