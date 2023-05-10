@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contoh jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        img {
+            max-width: 50%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <img src="img/img1.jpg" alt="Gambar 1">
+    <img src="img/img2.jpg" alt="Gambar 2">
+    <img src="img/img3.jpg" alt="Gambar 3">
+    <script>
+        $(document).ready(function() {
+            // Ketika salah satu gambar diklik, sembunyikan gambar tersebut
+            $('img').on('click', function() {
+                $(this).hide();
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+
+<script>
+
+    //ada pelanggan membeli barang elektronik
+       //barang barangnya misal ada TV=> 3 juta, Motor => 12 juta, kulkas => 4 juta 
+       //tentukan pembelian barangnya apa dan berapa yang beli
+       let pegawai = "Denaya";
+       let jabatan = "Manajer";
+       let gaji = 0;
+       let status = "belum menikah"
+       switch(jabatan){
+           case 'Manajer': gaji = 10000000; break;
+           case 'Asisten Manajer': gaji = 8000000; break;
+           case 'Staff': gaji = 5000000; break;
+           default: gaji = 0;
+       }
+
+       //membuat diskon untuk 3 produk diatas 
+       let tunjangan = 0;
+       tunjangan = gaji * 0.1;
+       let bpjs = 0;
+       bpjs = gaji * 0.1;     
+       let tunjanganMenikah = 0;
+       if (status == 'sudah menikah') tunjanganMenikah = gaji * 0.1;
+       else tunjanganMenikah = 0;
+    
+       let totalGaji = 0;
+       totalGaji = gaji + tunjangan - bpjs + tunjanganMenikah
+   
+       document.write("Data Gaji Pegawai "+ 
+       "<br> Pegawai : " + pegawai +
+       "<br> Jabatan : " + jabatan +
+       "<br> Tunjangan Jabatan : " + tunjangan +
+       "<br> BJPS : " + bpjs +
+       "<br> Tunjangan Menikah : " + tunjanganMenikah +
+       "<br> Total Gaji :" + totalGaji
+       )
+   </script>
